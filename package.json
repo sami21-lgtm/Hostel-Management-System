@@ -1,1 +1,8 @@
+mport os
 
+if os.path.isfile('requirements.txt'):
+    print("Found dependency file: requirements.txt")
+elif os.path.isfile('package.json'):
+    print("Found dependency file: package.json")
+else:
+    print("No dependency file (requirements.txt or package.json) found.")
