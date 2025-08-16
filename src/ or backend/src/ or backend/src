@@ -1,1 +1,8 @@
+import os
 
+if os.path.isdir('backend'):
+    print("Found source folder: backend/")
+elif os.path.isdir('src'):
+    print("Found source folder: src/")
+else:
+    print("No source code folder (backend/ or src/) found.")
